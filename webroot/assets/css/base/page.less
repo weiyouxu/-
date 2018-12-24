@@ -1,0 +1,60 @@
+.base-page {
+
+width: 100%;
+
+position: absolute;
+top:0;
+left: 0;
+overflow: hidden;
+background-color: black;
+
+
+  &.fit-on-height .wrapper {
+    position: absolute;
+    // background-color:green;
+  }
+
+
+  &.fit-on-height .ratio-fix {
+    position: relative;
+    width: 100%;
+    background-color:grey;
+
+  }
+
+
+
+
+  &.fit-on-width {
+    /*overflow: auto;*/
+  }
+
+  &.fit-on-width .wrapper {
+    position: absolute;
+    // background-color:green;
+  }
+
+
+  &.fit-on-width .ratio-fix {
+    position: relative;
+    width: 100%;
+    background-color:grey;
+
+  }
+
+
+  &.portrait .ratio-fix {
+    padding-bottom: percentage(@layout-height-p/@layout-width-p);
+
+  }
+
+  &.landscape .ratio-fix {
+    padding-bottom: percentage(@layout-height-l/@layout-width-l);
+
+  }
+
+
+
+
+}
+
